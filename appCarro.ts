@@ -1,4 +1,4 @@
-import {Carro} from "./objetoCarroEncapsulado";
+import {Carro} from "./objetoCarro";
 
 //declarar "referencia"
 let c1:Carro;

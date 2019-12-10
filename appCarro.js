@@ -1,9 +1,11 @@
 "use strict";
 exports.__esModule = true;
 var objetoCarro_1 = require("./objetoCarro");
-var c1; //declarar "referencia"
+//declarar "referencia"
+var c1;
 var c2;
-c1 = new objetoCarro_1.Carro(); //alocou memoria
+//alocou memoria
+c1 = new objetoCarro_1.Carro();
 c2 = new objetoCarro_1.Carro();
 //preencher dados
 c1.ano = 1968;
