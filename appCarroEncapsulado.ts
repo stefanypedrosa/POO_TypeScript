@@ -7,17 +7,17 @@ let c2:Carro;
 c1 = new Carro();
 c2 = new Carro();
 //preencher dados
-c1.ano = 1968;
-c1.modelo = "Fusca";
-c1.placa = "ABC1234";
-c1.ligado = false;
-c1.cor = "preto";
+c1.setAno(1968);
+c1.setModelo("Fusca");
+c1.setPlaca("ABC1234");
+c1.getLigado();
+c1.setCor("preto");
 
-c2.ano = 2019;
-c2.modelo = "Jeep";
-c2.placa = "BRA2019";
-c2.ligado = true;
-c2.cor = "branco";
+c2.setAno(2019);
+c2.setModelo("Jeep");
+c2.setPlaca("BRA2019");
+c2.getLigado();
+c2.setCor("branco");
 
 //manipulação de operações
 console.log(c1.getInfo());
@@ -27,6 +27,3 @@ c1.parar();
 console.log(c2.getInfo());
 c2.andar();
 c2.parar();
-
-console.log(c1.getInfo());
-console.log(c2.getInfo());
