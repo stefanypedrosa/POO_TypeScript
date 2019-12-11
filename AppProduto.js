@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var Produto_1 = require("./Produto");
+var p1;
+var p2;
+p1 = new Produto_1.Produto(1, "GARRAFA TERMICA", "VERMELHA, 2L, CONSERVA 12h", 50, 2, "garrafa.png");
+p2 = new Produto_1.Produto(2, "TUPPERWARE", "ROXA, 0.5L, NÃO CONSERVA", 25, 10, "tupperware.png");
+console.log(p1.getInfo());
+console.log(p2.getInfo());
+console.log(p1);
+console.log(p2);

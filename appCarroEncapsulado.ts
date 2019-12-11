@@ -3,7 +3,7 @@ import {Carro} from "./objetoCarroEncapsulado";
 //declarar "referencia"
 let c1:Carro;
 let c2:Carro;
-//alocou memoria
+//alocou memoria(instanciar)
 c1 = new Carro();
 c2 = new Carro();
 //preencher dados
