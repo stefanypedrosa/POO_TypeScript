@@ -17,4 +17,10 @@ export class Aluno extends Pessoa{
     public getAnoMat():number{
         return this.anoMatricula;
     }
+
+    public getInfoAluno():string{
+        var info:string;
+        info = `Curso: ${this.curso} \nAno de Matricula: ${this.anoMatricula}` 
+        return info;
+    }
 }

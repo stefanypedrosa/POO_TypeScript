@@ -25,4 +25,10 @@ export class Professor extends Pessoa{
     public getFormacao():string{
         return this.formacao;
     }
+
+    public getInfoProf():string{
+        var info:string;
+        info = `HoraAula: R$${this.horaAula} \nQuantidade de horas: ${this.qtdeHoras}h \nArea de formacao: ${this.formacao}` 
+        return info;
+    }
 }

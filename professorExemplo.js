@@ -37,6 +37,11 @@ var Professor = /** @class */ (function (_super) {
     Professor.prototype.getFormacao = function () {
         return this.formacao;
     };
+    Professor.prototype.getInfoProf = function () {
+        var info;
+        info = "HoraAula: R$" + this.horaAula + " \nQuantidade de horas: " + this.qtdeHoras + "h \nArea de formacao: " + this.formacao;
+        return info;
+    };
     return Professor;
 }(exemploHeranca_1.Pessoa));
 exports.Professor = Professor;

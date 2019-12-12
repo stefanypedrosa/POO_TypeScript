@@ -31,4 +31,11 @@ export class Pessoa{
     public getTelefone():number{
         return this.telefone;
     }
+
+
+    public getInfo():string{
+        var info:string;
+        info = `\nCodigo: ${this.codigo}\nNome: ${this.nome} \nEmail: ${this.email} \nTelefone: ${this.telefone}` 
+        return info;
+    }
 }

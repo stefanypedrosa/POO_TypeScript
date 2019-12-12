@@ -32,6 +32,12 @@ prof.setQHoras(5);
 prof.setFormacao("tecnologia")
 
 
-console.log(p);
+/*console.log(p);
 console.log(a);
-console.log(prof);
+console.log(prof);*/
+
+console.log(p.getInfo());
+console.log(a.getInfo());
+console.log(a.getInfoAluno());
+console.log(prof.getInfo());
+console.log(prof.getInfoProf());

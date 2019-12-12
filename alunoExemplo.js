@@ -31,6 +31,11 @@ var Aluno = /** @class */ (function (_super) {
     Aluno.prototype.getAnoMat = function () {
         return this.anoMatricula;
     };
+    Aluno.prototype.getInfoAluno = function () {
+        var info;
+        info = "Curso: " + this.curso + " \nAno de Matricula: " + this.anoMatricula;
+        return info;
+    };
     return Aluno;
 }(exemploHeranca_1.Pessoa));
 exports.Aluno = Aluno;

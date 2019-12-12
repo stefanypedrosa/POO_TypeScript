@@ -27,6 +27,11 @@ var Pessoa = /** @class */ (function () {
     Pessoa.prototype.getTelefone = function () {
         return this.telefone;
     };
+    Pessoa.prototype.getInfo = function () {
+        var info;
+        info = "\nCodigo: " + this.codigo + "\nNome: " + this.nome + " \nEmail: " + this.email + " \nTelefone: " + this.telefone;
+        return info;
+    };
     return Pessoa;
 }());
 exports.Pessoa = Pessoa;
