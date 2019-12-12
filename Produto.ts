@@ -24,7 +24,12 @@ export class Produto{
         this.preco = _preco;
         this.qtdeEstoque = _qtde;
         this.linkFoto = _foto;
-        this.freteGratis = true;
+        if(this.preco>=20){
+            this.freteGratis = true;
+        }
+        else{
+            this.freteGratis = false;
+        }
     }
 
     public getCod():number{
@@ -75,9 +80,6 @@ export class Produto{
 
     public frete(preco:number): string{
         var frete;
-        if(preco>=20){
-            this.freteGratis = true;
-        }
         if(this.freteGratis){
             frete = "Ebbbaaaa, tem Frete Grátis"
         }

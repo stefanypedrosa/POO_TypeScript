@@ -17,7 +17,12 @@ var Produto = /** @class */ (function () {
         this.preco = _preco;
         this.qtdeEstoque = _qtde;
         this.linkFoto = _foto;
-        this.freteGratis = true;
+        if (this.preco >= 20) {
+            this.freteGratis = true;
+        }
+        else {
+            this.freteGratis = false;
+        }
     }
     Produto.prototype.getCod = function () {
         return this.cod;
@@ -60,9 +65,6 @@ var Produto = /** @class */ (function () {
     };
     Produto.prototype.frete = function (preco) {
         var frete;
-        if (preco >= 20) {
-            this.freteGratis = true;
-        }
         if (this.freteGratis) {
             frete = "Ebbbaaaa, tem Frete Grátis";
         }
