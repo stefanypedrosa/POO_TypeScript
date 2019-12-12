@@ -39,7 +39,7 @@ var Professor = /** @class */ (function (_super) {
     };
     Professor.prototype.getInfoProf = function () {
         var info;
-        info = "HoraAula: R$" + this.horaAula + " \nQuantidade de horas: " + this.qtdeHoras + "h \nArea de formacao: " + this.formacao;
+        info = "HoraAula: R$" + this.horaAula + " \nQuantidade de horas: " + this.qtdeHoras + "h \nArea de formacao: " + this.formacao + " \nValor a receber: R$ " + this.horaAula * this.qtdeHoras;
         return info;
     };
     return Professor;
